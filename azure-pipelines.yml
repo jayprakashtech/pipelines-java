@@ -6,6 +6,10 @@
 trigger:
 - main
 
+variables:
+  name: jaylocal
+    
+
 pool:
   vmImage: ubuntu-latest
 
