@@ -26,7 +26,11 @@ steps:
     goals: 'package'
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)/s/target'
+    targetPath: '$(Pipeline.Workspace)/s/target/helloworld.war'
     artifact: 'jay-test-artifact'
     publishLocation: 'pipeline'
-    
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)/s/pom.xml'
+    artifact: 'jay-test-artifact'
+    publishLocation: 'pipeline'    
